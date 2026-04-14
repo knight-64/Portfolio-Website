@@ -60,27 +60,31 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com" target="_blank">
+          <a href="mailto:krishna987170@gmail.com" target="_blank">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://www.linkedin.com" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/krishna-murari-jha-45414a3a4"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedinIn />
           </a>
         </span>
         <span>
-          <a href="https://x.com" target="_blank">
+          <a href="https://www.google.com/maps/search/Greater+Noida" target="_blank">
             <FaXTwitter />
           </a>
         </span>
         <span>
-          <a href="https://www.instagram.com" target="_blank">
+          <a href="tel:+919871701091" target="_blank">
             <FaInstagram />
           </a>
         </span>
       </div>
-      <a className="resume-button" href="#">
+      <a className="resume-button" href="/images/krishnaResume.pdf" target="_blank">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />

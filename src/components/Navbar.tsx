@@ -2,55 +2,42 @@ import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 import "./styles/Navbar.css";
 
-gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
-export let smoother: ScrollSmoother;
+gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
   useEffect(() => {
-    smoother = ScrollSmoother.create({
-      wrapper: "#smooth-wrapper",
-      content: "#smooth-content",
-      smooth: 1.7,
-      speed: 1.7,
-      effects: true,
-      autoResize: true,
-      ignoreMobileResize: true,
-    });
-
-    smoother.scrollTop(0);
-    smoother.paused(true);
-
     let links = document.querySelectorAll(".header ul a");
     links.forEach((elem) => {
       let element = elem as HTMLAnchorElement;
       element.addEventListener("click", (e) => {
         if (window.innerWidth > 1024) {
-          e.preventDefault();
           let elem = e.currentTarget as HTMLAnchorElement;
           let section = elem.getAttribute("data-href");
-          smoother.scrollTo(section, true, "top top");
+          if (section) {
+            e.preventDefault();
+            document.querySelector(section)?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
         }
       });
-    });
-    window.addEventListener("resize", () => {
-      ScrollSmoother.refresh(true);
     });
   }, []);
   return (
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
+          KJ
         </a>
         <a
-          href="mailto:example@mail.com"
+          href="mailto:krishna987170@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          example@mail.com
+          krishna987170@gmail.com
         </a>
         <ul>
           <li>
@@ -66,6 +53,16 @@ const Navbar = () => {
           <li>
             <a data-href="#contact" href="#contact">
               <HoverLinks text="CONTACT" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="/images/krishnaResume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              data-cursor="disable"
+            >
+              <HoverLinks text="RESUME" cursor={true} />
             </a>
           </li>
         </ul>

@@ -10,58 +10,50 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:example@mail.com" data-cursor="disable">
-                example@mail.com
+              <a href="mailto:krishna987170@gmail.com" data-cursor="disable">
+                krishna987170@gmail.com
               </a>
             </p>
             <h4>Phone</h4>
             <p>
-              <a href="tel:+9199999999" data-cursor="disable">
-                +91 99999 99999
+              <a href="tel:+919871701091" data-cursor="disable">
+                +91 98717 01091
               </a>
             </p>
+            <h4>Location</h4>
+            <p>Greater Noida, India</p>
           </div>
           <div className="contact-box">
-            <h4>Social</h4>
+            <h4>Resume</h4>
             <a
-              href="https://github.com"
+              href="/images/krishnaResume.pdf"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
+              rel="noreferrer"
             >
-              Github <MdArrowOutward />
+              Download PDF <MdArrowOutward />
             </a>
+            <h4>LinkedIn</h4>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/krishna-murari-jha-45414a3a4"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
+              rel="noreferrer"
             >
-              Linkedin <MdArrowOutward />
+              View Profile <MdArrowOutward />
             </a>
-            <a
-              href="https://x.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
-            </a>
+            <h4>Skills</h4>
+            <p>Java, JavaScript, Python, HTML, CSS, backend development</p>
+            <p>Problem solving, algorithms, and data structures</p>
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Moncy Yohannan</span>
+              Designed and Developed <br /> by <span>Krishna Murari Jha</span>
             </h2>
             <h5>
-              <MdCopyright /> 2024
+              <MdCopyright /> 2026
             </h5>
           </div>
         </div>

@@ -6,9 +6,16 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+          I am Krishna Murari Jha, an enthusiastic and self-motivated learner
+          who enjoys building practical software with Java, JavaScript and
+          backend tools. I stay focused on problem solving, algorithms and
+          data structures, and I work comfortably in both solo and team
+          environments.
+        </p>
+        <p className="para">
+          I am currently pursuing my education at Greater Noida Institute of
+          Technology and building projects that strengthen my development,
+          analysis, and implementation skills.
         </p>
       </div>
     </div>
